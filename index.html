@@ -258,12 +258,17 @@
         h2 {
             font-size: 3rem;
             margin-bottom: 40px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
         }
 
         p {
             font-size: 1.2rem;
             max-width: 800px;
             margin-bottom: 30px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
         .First_Buttons {
@@ -345,6 +350,9 @@
             padding: 40px;
             box-shadow: var(--shadow);
             color: var(--black);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
         
         .Second h2 {
@@ -379,6 +387,9 @@
             border: 3px solid var(--black);
             padding: 40px;
             box-shadow: var(--shadow);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
         
         .LLM span {
@@ -388,6 +399,8 @@
             font-weight: bold;
             text-transform: uppercase;
             font-family: 'Space Mono', monospace;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
         .Topics {
@@ -499,6 +512,9 @@
             border: 3px solid var(--black);
             padding: 40px;
             box-shadow: var(--shadow);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
         
         .About span {
@@ -508,6 +524,8 @@
             font-weight: bold;
             text-transform: uppercase;
             font-family: 'Space Mono', monospace;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
         .Vision {
@@ -521,6 +539,9 @@
             border: 3px solid var(--black);
             padding: 40px;
             box-shadow: var(--shadow);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
         
         .Vision span {
@@ -530,6 +551,8 @@
             font-weight: bold;
             text-transform: uppercase;
             font-family: 'Space Mono', monospace;
+            display: inline-block;
+            margin-bottom: 20px;
         }
         
         .Author {
@@ -542,6 +565,9 @@
             border: 3px solid var(--black);
             padding: 40px;
             box-shadow: var(--shadow);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
 
         .Author span {
@@ -551,6 +577,8 @@
              padding: 5px 10px;
              text-transform: uppercase;
              font-weight: 700;
+             display: inline-block;
+             margin-bottom: 20px;
         }
 
         .Author_data {
@@ -616,6 +644,9 @@
         .Contact .column {
             text-align: center;
             margin: 0 auto;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
         }
         
         .Contact h2 {
@@ -637,6 +668,26 @@
             font-family: 'Space Mono', monospace;
             text-transform: uppercase;
             border-top: var(--border);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .Second .column,
+            .LLM .column,
+            .About .column,
+            .Vision .column,
+            .Contact .column,
+            .Author .Info {
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
         }
 
         /* Desktop adjustments */
