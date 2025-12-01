@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Architecture</title>
+    <title>Frontend Architecture | Libro de Arquitectura de Software para Frontend en Español</title>
 
     <link rel="preload" href="static/img/cover.png" as="image" />
     <link href="static/fonts/Avenir.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta name="description" content="El libro de arquitecturas de frontend en Español">
-
-    <meta name=”robots” content="index, follow">
+    <meta name="description" content="Frontend Architecture: Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend. Aprende a crear aplicaciones web escalables, mantenibles y eficientes.">
+    <meta name="keywords" content="frontend, arquitectura, software, desarrollo web, javascript, react, angular, vue, clean code, patrones de diseño, libro, español">
+    <meta name="author" content="Iago Lastra Rodríguez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://frontend-architecture.org/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://frontend-architecture.org/">
+    <meta property="og:title" content="Frontend Architecture - El libro de arquitectura de software para frontend">
+    <meta property="og:site_name" content="Frontend Architecture">
+    <meta property="og:description" content="Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend. Aprende a crear aplicaciones web escalables, mantenibles y eficientes.">
+    <meta property="og:image" content="https://frontend-architecture.org/static/img/og_image_twitter.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta property="book:author" content="Iago Lastra Rodríguez">
+    <meta property="book:tag" content="frontend">
+    <meta property="book:tag" content="arquitectura de software">
+    <meta property="book:tag" content="desarrollo web">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@iagolast">
     <meta name="twitter:creator" content="@iagolast">
-    <meta name="twitter:title" content="Frontend Architecture">
-    <meta name="twitter:description" content="El libro de arquitecturas de frontend en Español">
+    <meta name="twitter:title" content="Frontend Architecture - El libro de arquitectura de software para frontend">
+    <meta name="twitter:description" content="Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend. Aprende a crear aplicaciones web escalables y mantenibles.">
     <meta name="twitter:image" content="https://frontend-architecture.org/static/img/og_image_twitter.png">
+    <meta name="twitter:image:alt" content="Portada del libro Frontend Architecture">
+    
     <meta name="theme-color" content="#24a855">
 
     <link rel="apple-touch-icon" sizes="57x57" href="static/icons/apple-icon-57x57.png">
@@ -34,23 +55,116 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="static/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
-    <meta property="og:title" content="Frontend Architecture" />
-    <meta property="og:site_name" content="Frontend Architecture" />
-    <meta property="og:description" content="El libro de arquitecturas de frontend en Español" />
-    <meta property="og:image" content="https://frontend-architecture.org/static/img/og_image_twitter.png">
+    
+    <!-- Schema.org Structured Data for Google Rich Results -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Book",
-            "@id": "www.frontend-architecture.org",
-            "author": {
-              "@type": "Person",
-              "givenName": "Iago",
-              "familyName": "Lastra"
-            },
+            "@id": "https://frontend-architecture.org/#book",
             "name": "Frontend Architecture",
-            "url": "https://frontend-architecture.org"
-          }
+            "alternateName": "Arquitectura Frontend",
+            "description": "Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend. Aprende a crear aplicaciones web escalables, mantenibles y eficientes.",
+            "url": "https://frontend-architecture.org",
+            "image": "https://frontend-architecture.org/static/img/cover.png",
+            "inLanguage": "es",
+            "author": {
+                "@type": "Person",
+                "@id": "https://frontend-architecture.org/#author",
+                "name": "Iago Lastra Rodríguez",
+                "givenName": "Iago",
+                "familyName": "Lastra Rodríguez",
+                "url": "https://iagolast.github.io",
+                "sameAs": [
+                    "https://twitter.com/iagolast",
+                    "https://github.com/iagolast"
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Leanpub"
+            },
+            "genre": ["Programación", "Desarrollo Web", "Arquitectura de Software"],
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Frontend Development"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Software Architecture"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Web Development"
+                }
+            ],
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "price": "0",
+                    "priceCurrency": "EUR",
+                    "url": "https://leanpub.com/frontend-architecture",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Leanpub"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://amzn.eu/d/8LVdmVo",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Amazon"
+                    }
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://frontend-architecture.org/#webpage",
+            "url": "https://frontend-architecture.org",
+            "name": "Frontend Architecture - Libro de arquitectura de software para frontend",
+            "description": "Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend.",
+            "inLanguage": "es",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://frontend-architecture.org/#website",
+                "url": "https://frontend-architecture.org",
+                "name": "Frontend Architecture"
+            },
+            "about": {
+                "@id": "https://frontend-architecture.org/#book"
+            },
+            "mainEntity": {
+                "@id": "https://frontend-architecture.org/#book"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://frontend-architecture.org"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Frontend Architecture",
+                    "item": "https://frontend-architecture.org/#libro"
+                }
+            ]
+        }
     </script>
 
     <style>
@@ -172,6 +286,8 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .First_Button {
@@ -181,14 +297,40 @@
             box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
             color: #FFFFFF;
             font-family: "Avenir Book";
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 900;
             letter-spacing: 0;
             line-height: 19px;
+            transition: all 0.3s ease;
+            margin: 8px;
         }
 
         .First_Button:hover {
-            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
+            box-shadow: 0 15px 30px -1px rgba(20, 110, 233, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .First_Button--amazon {
+            background: #FF9900;
+            color: #111;
+            box-shadow: 0 10px 25px -1px rgba(255, 153, 0, 0.4);
+        }
+
+        .First_Button--amazon:hover {
+            background: #FFB84D;
+            box-shadow: 0 15px 35px -1px rgba(255, 153, 0, 0.5);
+        }
+
+        .First_Button--secondary {
+            background: transparent;
+            border: 2px solid #2f7d5b;
+            color: #2f7d5b;
+            box-shadow: none;
+        }
+
+        .First_Button--secondary:hover {
+            background: #2f7d5b;
+            color: #fff;
         }
 
         .Second {
@@ -342,6 +484,24 @@
             cursor: pointer;
             margin: 24px auto;
             max-width: 240px;
+            transition: all 0.3s ease;
+        }
+
+        .Buy_button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .Buy_button--amazon {
+            background: #FF9900;
+            border-color: #FF9900;
+            color: #111;
+            font-weight: 700;
+        }
+
+        .Buy_button--amazon:hover {
+            background: #FFB84D;
+            border-color: #FFB84D;
         }
 
         .Contact {
@@ -649,9 +809,13 @@
                     Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend.
                 </p>
                 <div class="First_Buttons">
+                    <a href="https://amzn.eu/d/8LVdmVo" rel="noopener" target="_blank"
+                        class="First_Button First_Button--amazon">
+                        🛒 Comprar en Amazon
+                    </a>
                     <a href="https://leanpub.com/frontend-architecture" rel="noopener" target="_blank"
-                        class="First_Button">
-                        Descárgalo aquí
+                        class="First_Button First_Button--secondary">
+                        Descarga gratuita
                     </a>
                 </div>
                 <div class="First_book">
@@ -767,8 +931,12 @@
             <span> Comprar </span>
             <h2> Elige la plataforma</h2>
             <div class="Buy_buttons">
+                <a rel="noopener" href="https://amzn.eu/d/8LVdmVo" target="_blank" class="Buy_button Buy_button--amazon">
+                    🛒 Comprar en Amazon
+                </a>
                 <a rel="noopener" href="https://leanpub.com/frontend-architecture" target="_blank" class="Buy_button">
-                    LeanPub</a>
+                    LeanPub
+                </a>
                 <a rel="noopener" href="static/resources/frontend-architecture-sample.pdf" class="Buy_button">
                     Descargar Muestra Gratuita
                 </a>
@@ -797,7 +965,7 @@
     </section>
 
     <footer>
-        <span> © 2024 iagolast </span>
+        <span> © 2025 Iago Lastra - Frontend Architecture </span>
     </footer>
 
 

@@ -1,12 +1,49 @@
 {
   "@context": "https://schema.org",
   "@type": "Book",
-  "@id": "www.frontend-architecture.org",
+  "@id": "https://frontend-architecture.org/#book",
+  "name": "Frontend Architecture",
+  "alternateName": "Arquitectura Frontend",
+  "description": "Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend. Aprende a crear aplicaciones web escalables, mantenibles y eficientes.",
+  "url": "https://frontend-architecture.org",
+  "image": "https://frontend-architecture.org/static/img/cover.png",
+  "inLanguage": "es",
   "author": {
     "@type": "Person",
+    "name": "Iago Lastra Rodríguez",
     "givenName": "Iago",
-    "familyName": "Lastra"
+    "familyName": "Lastra Rodríguez",
+    "url": "https://iagolast.github.io",
+    "sameAs": [
+      "https://twitter.com/iagolast",
+      "https://github.com/iagolast"
+    ]
   },
-  "name": "Frontend Architecture",
-  "url": "https://frontend-architecture.org"
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leanpub"
+  },
+  "genre": ["Programación", "Desarrollo Web", "Arquitectura de Software"],
+  "offers": [
+    {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "url": "https://leanpub.com/frontend-architecture",
+      "seller": {
+        "@type": "Organization",
+        "name": "Leanpub"
+      }
+    },
+    {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://amzn.eu/d/8LVdmVo",
+      "seller": {
+        "@type": "Organization",
+        "name": "Amazon"
+      }
+    }
+  ]
 }
